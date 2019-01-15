@@ -1,0 +1,441 @@
+EESchema Schematic File Version 4
+LIBS:Nixie_Module_PowerSupply-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Nixie_Module_PowerSupply-rescue:Conn_01x04_Female-Connectors J2
+U 1 1 5BFA3FEF
+P 2700 4500
+F 0 "J2" H 2727 4476 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 2727 4385 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 2700 4500 50  0001 C CNN
+F 3 "~" H 2700 4500 50  0001 C CNN
+	1    2700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nixie_Module_PowerSupply-rescue:Conn_01x08_Female-Connectors J3
+U 1 1 5BFA4033
+P 3150 5750
+F 0 "J3" H 3177 5726 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 3177 5635 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 3150 5750 50  0001 C CNN
+F 3 "~" H 3150 5750 50  0001 C CNN
+	1    3150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nixie_Module_PowerSupply-rescue:Conn_01x04_Female-Connectors J5
+U 1 1 5BFA406F
+P 4500 4450
+F 0 "J5" H 4527 4426 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 4527 4335 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 4500 4450 50  0001 C CNN
+F 3 "~" H 4500 4450 50  0001 C CNN
+	1    4500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5BFA4113
+P 3850 4250
+F 0 "#PWR06" H 3850 4100 50  0001 C CNN
+F 1 "+5V" H 3865 4423 50  0000 C CNN
+F 2 "" H 3850 4250 50  0001 C CNN
+F 3 "" H 3850 4250 50  0001 C CNN
+	1    3850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4400 2300 4400
+Wire Wire Line
+	2300 4400 2300 4250
+$Comp
+L power:+3V3 #PWR09
+U 1 1 5BFA4268
+P 4050 4250
+F 0 "#PWR09" H 4050 4100 50  0001 C CNN
+F 1 "+3V3" H 4065 4423 50  0000 C CNN
+F 2 "" H 4050 4250 50  0001 C CNN
+F 3 "" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5BFA4279
+P 4050 4900
+F 0 "#PWR010" H 4050 4650 50  0001 C CNN
+F 1 "GND" H 4055 4727 50  0000 C CNN
+F 2 "" H 4050 4900 50  0001 C CNN
+F 3 "" H 4050 4900 50  0001 C CNN
+	1    4050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5BFA428A
+P 2800 6350
+F 0 "#PWR05" H 2800 6100 50  0001 C CNN
+F 1 "GND" H 2805 6177 50  0000 C CNN
+F 2 "" H 2800 6350 50  0001 C CNN
+F 3 "" H 2800 6350 50  0001 C CNN
+	1    2800 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4350 4050 4350
+Wire Wire Line
+	4050 4350 4050 4250
+Wire Wire Line
+	4300 4650 4050 4650
+Wire Wire Line
+	4050 4650 4050 4900
+Wire Wire Line
+	2950 6150 1250 6150
+Text Label 1250 5650 0    50   ~ 0
+NIX_SDA
+Text Label 1250 5750 0    50   ~ 0
+NIX_SCL
+Text Label 1250 5850 0    50   ~ 0
+SW_DOWN
+Text Label 1250 5950 0    50   ~ 0
+SW_MODE
+Text Label 1250 5550 0    50   ~ 0
+SW_UP
+Text Label 1250 6150 0    50   ~ 0
+GROVE_GPIO_0
+$Sheet
+S 8400 4050 1550 1250
+U 5BFA54CA
+F0 "Sheet5BFA54C9" 50
+F1 "PowerSupply.sch" 50
+$EndSheet
+$Comp
+L Nixie_Module_PowerSupply-rescue:Conn_01x04_Female-Connectors J1
+U 1 1 5BFA9767
+P 2700 3200
+F 0 "J1" H 2727 3176 50  0000 L CNN
+F 1 "Grove_GPIO" H 2727 3085 50  0000 L CNN
+F 2 "Nixie_Module_PowerSupply:Grove_THT" H 2700 3200 50  0001 C CNN
+F 3 "~" H 2700 3200 50  0001 C CNN
+	1    2700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5BFA97A2
+P 2300 2950
+F 0 "#PWR02" H 2300 2800 50  0001 C CNN
+F 1 "+3V3" H 2315 3123 50  0000 C CNN
+F 2 "" H 2300 2950 50  0001 C CNN
+F 3 "" H 2300 2950 50  0001 C CNN
+	1    2300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5BFA97B7
+P 2300 3550
+F 0 "#PWR03" H 2300 3300 50  0001 C CNN
+F 1 "GND" H 2305 3377 50  0000 C CNN
+F 2 "" H 2300 3550 50  0001 C CNN
+F 3 "" H 2300 3550 50  0001 C CNN
+	1    2300 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3200 1800 3200
+Wire Wire Line
+	2500 3100 1800 3100
+Wire Wire Line
+	2300 3300 2300 2950
+Wire Wire Line
+	2300 3300 2500 3300
+Wire Wire Line
+	2500 3400 2300 3400
+Wire Wire Line
+	2300 3400 2300 3550
+Text Label 1800 3100 0    50   ~ 0
+GROVE_GPIO_0
+Text Label 1800 3200 0    50   ~ 0
+GROVE_GPIO_1
+$Comp
+L NixieKitLib:+HV #PWR04
+U 1 1 5BFAE22D
+P 2300 4250
+F 0 "#PWR04" H 2300 4100 50  0001 C CNN
+F 1 "+HV" H 2315 4423 50  0000 C CNN
+F 2 "" H 2300 4250 50  0001 C CNN
+F 3 "" H 2300 4250 50  0001 C CNN
+	1    2300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4500 2300 4500
+Wire Wire Line
+	2300 4500 2300 4400
+Connection ~ 2300 4400
+Text Label 3550 3200 0    50   ~ 0
+NIX_SDA
+Text Label 3550 3100 0    50   ~ 0
+NIX_SCL
+Wire Wire Line
+	4050 3400 4050 3550
+Wire Wire Line
+	4250 3400 4050 3400
+Wire Wire Line
+	4050 3300 4250 3300
+Wire Wire Line
+	4050 3300 4050 2950
+Wire Wire Line
+	4250 3100 3550 3100
+Wire Wire Line
+	4250 3200 3550 3200
+$Comp
+L power:GND #PWR08
+U 1 1 5BFAB43F
+P 4050 3550
+F 0 "#PWR08" H 4050 3300 50  0001 C CNN
+F 1 "GND" H 4055 3377 50  0000 C CNN
+F 2 "" H 4050 3550 50  0001 C CNN
+F 3 "" H 4050 3550 50  0001 C CNN
+	1    4050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR07
+U 1 1 5BFAB439
+P 4050 2950
+F 0 "#PWR07" H 4050 2800 50  0001 C CNN
+F 1 "+3V3" H 4065 3123 50  0000 C CNN
+F 2 "" H 4050 2950 50  0001 C CNN
+F 3 "" H 4050 2950 50  0001 C CNN
+	1    4050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nixie_Module_PowerSupply-rescue:Conn_01x04_Female-Connectors J4
+U 1 1 5BFAB432
+P 4450 3200
+F 0 "J4" H 4477 3176 50  0000 L CNN
+F 1 "Grove_Analog" H 4477 3085 50  0000 L CNN
+F 2 "Nixie_Module_PowerSupply:Grove_THT" H 4450 3200 50  0001 C CNN
+F 3 "~" H 4450 3200 50  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4450 3850 4450
+Wire Wire Line
+	3850 4450 3850 4250
+Wire Wire Line
+	4050 4550 4050 4650
+Connection ~ 4050 4650
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5BFB308C
+P 5900 3300
+F 0 "SW1" V 5854 3448 50  0000 L CNN
+F 1 "SW_Push" V 5945 3448 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS" H 5900 3500 50  0001 C CNN
+F 3 "" H 5900 3500 50  0001 C CNN
+	1    5900 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5BFB31A3
+P 5900 3650
+F 0 "#PWR015" H 5900 3400 50  0001 C CNN
+F 1 "GND" H 5905 3477 50  0000 C CNN
+F 2 "" H 5900 3650 50  0001 C CNN
+F 3 "" H 5900 3650 50  0001 C CNN
+	1    5900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3500 5900 3650
+Wire Wire Line
+	5900 3100 5900 2450
+Text Label 5900 2450 3    50   ~ 0
+SW_MODE
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5BFB4A2B
+P 6400 3300
+F 0 "SW2" V 6354 3448 50  0000 L CNN
+F 1 "SW_Push" V 6445 3448 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS" H 6400 3500 50  0001 C CNN
+F 3 "" H 6400 3500 50  0001 C CNN
+	1    6400 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5BFB4A32
+P 6400 3650
+F 0 "#PWR016" H 6400 3400 50  0001 C CNN
+F 1 "GND" H 6405 3477 50  0000 C CNN
+F 2 "" H 6400 3650 50  0001 C CNN
+F 3 "" H 6400 3650 50  0001 C CNN
+	1    6400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3500 6400 3650
+Wire Wire Line
+	6400 3100 6400 2450
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5BFB527A
+P 6900 3300
+F 0 "SW3" V 6854 3448 50  0000 L CNN
+F 1 "SW_Push" V 6945 3448 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS" H 6900 3500 50  0001 C CNN
+F 3 "" H 6900 3500 50  0001 C CNN
+	1    6900 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5BFB5281
+P 6900 3650
+F 0 "#PWR018" H 6900 3400 50  0001 C CNN
+F 1 "GND" H 6905 3477 50  0000 C CNN
+F 2 "" H 6900 3650 50  0001 C CNN
+F 3 "" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3500 6900 3650
+Wire Wire Line
+	6900 3100 6900 2450
+Text Label 6400 2450 3    50   ~ 0
+SW_UP
+Text Label 6900 2450 3    50   ~ 0
+SW_DOWN
+$Comp
+L Nixie_Module_PowerSupply-rescue:R_Network06-device RN1
+U 1 1 5BFB6FC1
+P 2250 5150
+F 0 "RN1" H 2530 5196 50  0000 L CNN
+F 1 "R_Network06" H 2530 5105 50  0000 L CNN
+F 2 "Resistors_THT:R_Array_SIP7" V 2625 5150 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2250 5150 50  0001 C CNN
+	1    2250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5BFB792E
+P 1950 4750
+F 0 "#PWR01" H 1950 4600 50  0001 C CNN
+F 1 "+3V3" H 1965 4923 50  0000 C CNN
+F 2 "" H 1950 4750 50  0001 C CNN
+F 3 "" H 1950 4750 50  0001 C CNN
+	1    1950 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4750 1950 4950
+$Comp
+L Nixie_Module_PowerSupply-rescue:Conn_01x02_Female-Connectors J6
+U 1 1 5BFAC2F0
+P 2700 1650
+F 0 "J6" H 2727 1626 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 2727 1535 50  0000 L CNN
+F 2 "Connectors_JST:JST_XH_S02B-XH-A_02x2.50mm_Angled" H 2700 1650 50  0001 C CNN
+F 3 "~" H 2700 1650 50  0001 C CNN
+	1    2700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR032
+U 1 1 5BFAC3DE
+P 2350 1550
+F 0 "#PWR032" H 2350 1400 50  0001 C CNN
+F 1 "+12V" H 2365 1723 50  0000 C CNN
+F 2 "" H 2350 1550 50  0001 C CNN
+F 3 "" H 2350 1550 50  0001 C CNN
+	1    2350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR033
+U 1 1 5BFAC485
+P 2350 1850
+F 0 "#PWR033" H 2350 1600 50  0001 C CNN
+F 1 "GND" H 2355 1677 50  0000 C CNN
+F 2 "" H 2350 1850 50  0001 C CNN
+F 3 "" H 2350 1850 50  0001 C CNN
+	1    2350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1650 2350 1650
+Wire Wire Line
+	2350 1650 2350 1550
+Wire Wire Line
+	2500 1750 2350 1750
+Wire Wire Line
+	2350 1750 2350 1850
+Wire Wire Line
+	4300 4550 4050 4550
+Text Label 1250 5450 0    50   ~ 0
+GROVE_GPIO_1
+Wire Wire Line
+	2950 6050 2800 6050
+Wire Wire Line
+	2800 6050 2800 6350
+Wire Wire Line
+	2950 5450 1250 5450
+Wire Wire Line
+	2350 5550 1250 5550
+Wire Wire Line
+	2950 5550 2350 5550
+Connection ~ 2350 5550
+Wire Wire Line
+	2350 5350 2350 5550
+Wire Wire Line
+	2250 5950 1250 5950
+Wire Wire Line
+	2950 5950 2250 5950
+Connection ~ 2250 5950
+Wire Wire Line
+	2250 5350 2250 5950
+Wire Wire Line
+	2150 5850 1250 5850
+Wire Wire Line
+	2950 5850 2150 5850
+Connection ~ 2150 5850
+Wire Wire Line
+	2150 5350 2150 5850
+Wire Wire Line
+	2050 5750 1250 5750
+Wire Wire Line
+	2950 5750 2050 5750
+Connection ~ 2050 5750
+Wire Wire Line
+	2050 5350 2050 5750
+Wire Wire Line
+	1950 5650 1250 5650
+Wire Wire Line
+	2950 5650 1950 5650
+Connection ~ 1950 5650
+Wire Wire Line
+	1950 5350 1950 5650
+$EndSCHEMATC

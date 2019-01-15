@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name NixieKitLib)(type Legacy)(uri ${KIPRJMOD}/lib/symbols/NixieKitLib.lib)(options "")(descr ""))
+  (lib (name NixiePowerSupply-rescue)(type Legacy)(uri ${KIPRJMOD}/NixiePowerSupply-rescue.lib)(options "")(descr ""))
+  (lib (name Nixie_Module_PowerSupply-rescue)(type Legacy)(uri ${KIPRJMOD}/Nixie_Module_PowerSupply-rescue.lib)(options "")(descr ""))
+)
